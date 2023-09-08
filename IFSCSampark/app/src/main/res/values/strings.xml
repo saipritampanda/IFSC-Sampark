@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">IFSC Sampark</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="nightxstudio_productions">© NightXStudio Productions</string>
+
+
+    <!-- Donation Activity -->
+    <string name="buymeacoffeeFullText">\"Hello there! If you enjoy the content I create or find my assistance helpful, please consider buying me a coffee. Your support will not only help me stay fueled and motivated but also enables me to continue producing valuable and insightful information. Every cup of coffee contributes to my ongoing efforts to share knowledge and make a positive impact. Your generosity is greatly appreciated, and together, we can make a difference. \n<b>Thank you for being a part of this journey!</b>\"</string>
+    <string name="from_developer_s_desk">- From Developer\'s Desk</string>
+    <string name="your_love">Your\'s Love:</string>
+
+    <string name="donate_10_text"><b>Your small donation of  ₹10 can lead to immense help to our community.\n\nTHANK YOU!</b></string>
+    <string name="donate_30_text"><b>Your small donation of  ₹30 can lead to immense help to our community.\n\nTHANK YOU!</b></string>
+    <string name="donate_50_text"><b>Your small donation of  ₹50 can lead to immense help to our community.\n\nTHANK YOU!</b></string>
+    <string name="donate_120_text"><b>Your small donation of  ₹120 can lead to immense help to our community.\n\nTHANK YOU!</b></string>
+
+    <string name="chocolate">Chocolate</string>
+    <string name="coffee">Coffee</string>
+    <string name="burger">Burger</string>
+    <string name="meal">Meal</string>
+
+    <string name="donate_10">DONATE ₹10</string>
+    <string name="donate_30">DONATE ₹30</string>
+    <string name="donate_50">DONATE ₹50</string>
+    <string name="donate_120">DONATE ₹120</string>
+
+    <string name="donate_rs10">Donate Rs10</string>
+    <string name="donate_rs30">Donate Rs30</string>
+    <string name="donate_rs50">Donate Rs50</string>
+    <string name="donate_rs120">Donate Rs120</string>
+
+    <string name="pay_10">PAY ₹10 VIA UPI</string>
+    <string name="pay_30">PAY ₹30 VIA UPI</string>
+    <string name="pay_50">PAY ₹50 VIA UPI</string>
+    <string name="pay_120">PAY ₹120 VIA UPI</string>
+
+    <string name="made_in_india_made_with_love"><b>Made in INDIA | Made with LOVE  |  Made for ALL</b></string>
+    <string name="emoji">🇮🇳 🙏 🤍</string>
+    <string name="india_emoji">🇮🇳</string>
+
+</resources>

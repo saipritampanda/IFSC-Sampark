@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ResultActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-1785962158595876/7180608790"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+    <LinearLayout
+        android:id="@+id/firstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/andika"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/PrimaryColor" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Details"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/andika"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:background="@color/PrimaryColor" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/custom_scrollbar_thumb"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstRow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="4dp">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Bank Name"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bankNameBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Bank Code"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/bankCodeBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="State"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/stateBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Branch"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/branchBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Centre"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/centreBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addressBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="City"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cityBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="District"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/districtBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Branch Contact Details"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/contactBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="IFSC Code"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ifscCodeBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="ISO-3166"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/iso3166Box"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="MICR Code"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/micrCodeBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="IMPS Availability"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/impsBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="NEFT Availability"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/neftBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="RTGS Availability"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rtgsBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="UPI Availability"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/upiBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="SWIFT Availability"
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/swiftBox"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:fontFamily="@font/allerta"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="14.5sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="LARGE_BANNER"
+        app:adUnitId="ca-app-pub-1785962158595876/9798785853"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </com.google.android.gms.ads.AdView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
