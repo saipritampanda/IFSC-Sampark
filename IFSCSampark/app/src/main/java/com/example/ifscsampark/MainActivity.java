@@ -158,10 +158,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-
-
-
         ifscEditTextView = findViewById(R.id.ifscEditTextView);
         bankDetailsBtn = findViewById(R.id.bankDetailsBtn);
         donationBtn = findViewById(R.id.donationBtn);
@@ -216,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
             try{
                 if(response.getString("IFSC").length() != 11){
                     // Checking if the response is not loaded and status for the repose is fail. if response status is failure we are displaying an invalid IFSC code in our text view.
-                    Toast.makeText(MainActivity.this, "Please enter a valid IFSC code - status failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please enter a valid IFSC code", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     // If the status is successful we are extracting data from JSON file
